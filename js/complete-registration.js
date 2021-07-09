@@ -2,7 +2,7 @@
 document.write(
   `
   <div id="complete-registration">
-  <h1>3. Complete registration</h1>
+  <h1 style="padding:5px;">3. Complete registration</h1>
 
   <input class="form-control" type="text" name="username" id="username" placeholder="Username" required=""><br>
   <input class="form-control" type="text" name="password" id="password" placeholder="Password" required=""><br>
