@@ -9,7 +9,6 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #0069d9;
   font-family: 'Lato', sans-serif;
 }
 .wrapper{
@@ -89,4 +88,9 @@ input[type="radio"]{
 #option-3:checked:checked ~ .option-3 span,
 #option-4:checked:checked ~ .option-4 span{
   color: #fff;
+}
+
+.wrapper .option .select-img{
+  max-height:75px;
+  min-height:50px;
 }
