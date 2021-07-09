@@ -18,12 +18,20 @@
   <link rel="stylesheet" href="css/slicknav.css">
   <link rel="stylesheet" href="css/themify-icons.css">
 
+<script>
+  function save_email(){
+    document.getElementById("program-select").style.display='none';
+    document.getElementById("complete-registration").style.display='';
+  }
+</script>
+
 </head>
 <body>
 
   <div class="modal fade show" id="homemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true" style="padding-right: 0px; display: block;">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+
                 <div class="modal-header">
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -32,6 +40,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
+                      <!--modal for program select-->
+                      <div id="program-select">
                         <h1 class="display-4 text-center" style="font-family:'Rubik';font-weight:normal;font-size:42px;color: black;">
                             Join Now for a FREE Premium Program
                         </h1>
@@ -46,12 +56,19 @@
                             2. Enter E-mail
                         </h1>
                         <div class="d-flex">
-                            <input class="form-control" type="text" name="email" id="email" placeholder="E-mail" required="">
-                            <button data-dismiss="modal" type="submit" onclick="save_email()" class="btn header-btn-sign ml-2" tabindex="0" style="font-family:'Rubik';font-weight:normal;font-size:15px">Join Beta</button>
+                            <input class="form-control" type="text" name="email" id="email" placeholder="E-mail" required="" style="font-size:24px">
+                            <button data-dismiss="modal" type="submit" onclick="save_email()" class="btn header-btn-sign ml-2" tabindex="0" style="font-family:'Rubik';font-weight:normal;font-size:24px">Join</button>
                         </div>
                     </div>
-
+                    <!--end modal for program select-->
+                    <!--modal for completing user registration-->
+                    <div id="complete-registration" style="display:none;">
+                      <script src="js/complete-registration.js"></script>
+                    </div>
+                    <!--end modal for completing user registration-->
+                  </div>
                 </div>
+
             </div>
         </div>
         <!--end popup modal for collecting emails-->
